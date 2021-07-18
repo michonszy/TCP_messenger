@@ -5,7 +5,7 @@ target_host = 'localhost'
 target_port = 9999
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect((target_host, target_host,))
+sock.connect((target_host, target_port,))
 
 class WatchForReply(Thread):
     def run(self):
